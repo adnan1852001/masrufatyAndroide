@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+
+    >
+    /*****************************************************************/
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:weightSum="3"
+       android:orientation="vertical">
+
+       /*****************************************************************/
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="32dp"
+           android:layout_weight="1"
+           android:src="@drawable/ic_save_money" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masrufaty"
+            android:textAllCaps="true"
+            android:textColor="@color/RED"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="2"
+           android:orientation="vertical"
+           android:layout_margin="32dp"
+           android:layout_marginTop="32dp"
+           >
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+
+           >
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Email"
+               android:drawableStart="@drawable/ic_baseline_email_24"
+               android:background="@color/white"
+
+               />
+
+
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:passwordToggleEnabled="true"
+           app:passwordToggleTint="@color/ffd"
+           >
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Password"
+               android:maxLength="8"
+               android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+               android:background="#FFFFFF"
+               android:inputType="textPassword"
+
+               />
+
+
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Password"
+                android:textColor="@color/ffd"/>
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Login"
+               android:layout_marginTop="8dp"
+               android:background="@drawable/button_chape"
+
+
+               />
+
+           <Button
+               android:layout_marginTop="16dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Register"
+               android:background="@drawable/button_chape"
+
+               />
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+</LinearLayout>
